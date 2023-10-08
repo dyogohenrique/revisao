@@ -12,7 +12,7 @@ h1{
 
 button{
     cursor: pointer;
-    border: 3cm;
+    border-radius: 10rem ;
     color: rgb(251, 101, 211);
     
 }
