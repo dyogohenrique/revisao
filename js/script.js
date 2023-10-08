@@ -21,8 +21,6 @@ if (metodoPagamento === "Cartão de Crédito") {
     codigoSeguranca = document.querySelector("#codigoSeguranca")
 }
 
-// let campoCartao = document.querySelector("#cartaoCredito-continer")
-
 function mostrarCampoCartao(exibir) {
     if (exibir) {
         campoCartao.style.display = "block"
