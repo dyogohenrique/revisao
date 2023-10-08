@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,10 @@
         <div>
             <label for="cpf">Digite o seu CPF</label>
             <input type="text" name="cpf" id="cpf" required>
+        </div>
+        <div>
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" required>
         </div>
         <div>
             <label for="bairro">Bairro</label>
@@ -52,20 +56,20 @@
         <div>
             <label for="metodoPagamento">Selecione o método de pagamento</label>
             <div>
-                <input type="radio" name="metodoPagamento" id="pix">
+                <input type="radio" name="metodoPagamento" id="pix" value="PIX" checked>
                 <label for="pix">PIX</label>
             </div>
             <div>
-                <input type="radio" name="metodoPagamento" id="boleto">
+                <input type="radio" name="metodoPagamento" id="boleto" value="Boleto">
                 <label for="boleto">Boleto</label>
             </div>
             <div>
-                <input type="radio" name="metodoPagamento" id="cartaoCredito">
+                <input type="radio" name="metodoPagamento" id="cartaoCredito" value="Cartão de Crédito">
                 <label for="cartaoCredito">Cartão de crédito</label>
             </div>
         </div>
 
-        <div>
+        <div id="cartaoCredito-continer">
             <div>
                 <label for="numeroCartao">Nº do Cartão</label>
                 <input type="text" name="numeroCartao" id="numeroCartao" required>
