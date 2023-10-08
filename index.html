@@ -56,15 +56,15 @@
         <div>
             <label for="metodoPagamento">Selecione o método de pagamento</label>
             <div>
-                <input type="radio" name="metodoPagamento" id="pix" value="PIX" checked>
+                <input type="radio" name="metodoPagamento" id="pix" value="PIX" checked onchange="mostrarCampoCartao(false)">
                 <label for="pix">PIX</label>
             </div>
             <div>
-                <input type="radio" name="metodoPagamento" id="boleto" value="Boleto">
+                <input type="radio" name="metodoPagamento" id="boleto" value="Boleto" onchange="mostrarCampoCartao(false)">
                 <label for="boleto">Boleto</label>
             </div>
             <div>
-                <input type="radio" name="metodoPagamento" id="cartaoCredito" value="Cartão de Crédito">
+                <input type="radio" name="metodoPagamento" id="cartaoCredito" value="Cartão de Crédito" onchange="mostrarCampoCartao(true)">
                 <label for="cartaoCredito">Cartão de crédito</label>
             </div>
         </div>
