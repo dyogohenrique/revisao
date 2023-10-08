@@ -2,11 +2,16 @@
 body{
     background-color: pink;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    text-align: center;
+    text-align: center, justify;
 
 }
 
 h1{
     color: rgb(245, 245, 245);
+}
+
+button{
+    cursor: pointer;
+    border: 0cm;
+    
 }
