@@ -1,8 +1,9 @@
 
-body{
+.supernova, body{
     background-color: pink;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center, justify;
+    background: none;
 
 }
 
