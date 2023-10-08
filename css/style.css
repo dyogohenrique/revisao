@@ -8,8 +8,10 @@ body{
 }
 
 form-all{
-    bac
+    background: none !important;
+    box-shadow: none;
 } 
+
 h1{
     color: rgb(245, 245, 245);
 }
