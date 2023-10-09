@@ -22,14 +22,14 @@
         </div>
         <div>
             <label for="cpf">Digite o seu CPF</label>
-            <input type="text" name="cpf" id="cpf" required>
+            <input type="text" name="cpf" id="cpf" maxlength="11" minlength="11" required>
         </div>
 
         <p>Digite o seu endereço</p>
 
         <div>
             <label for="cep">CEP</label>
-            <input type="text" name="cep" id="cep" required>
+            <input type="text" name="cep" id="cep" maxlength="8" minlength="8" required>
         </div>
         <div>
             <label for="bairro">Bairro</label>
@@ -41,17 +41,17 @@
         </div>
         <div>
             <label for="numero">Nº</label>
-            <input type="text" name="numero" id="numero" required>
+            <input type="text" name="numero" id="numero" maxlength="5" required>
         </div>
 
         <div>
             <label for="sexo">Sexo</label>
             <div>
-                <input type="radio" name="sexo" id="Feminino">
+                <input type="radio" name="sexo" id="Feminino" value="Masculino" checked>
                 <label for="Feminino">Feminino</label>
             </div>
             <div>
-                <input type="radio" name="sexo" id="Masculino">
+                <input type="radio" name="sexo" id="Masculino" value="Feminino">
                 <label for="Masculino">Masculino</label>
             </div>
         </div>
@@ -75,22 +75,30 @@
         <div id="campoCartao">
             <div>
                 <label for="numeroCartao">Nº do Cartão</label>
-                <input type="text" name="numeroCartao" id="numeroCartao" required>
+                <input type="text" name="numeroCartao" id="numeroCartao" minlength="16" maxlength="16">
             </div>
             <div>
                 <label for="validade">Validade do Cartão</label>
-                <input type="text" name="validade" id="validade" required>
+                <input type="month" name="validade" id="validade">
             </div>
             <div>
                 <label for="codigoSeguranca">Código de Segurança</label>
-                <input type="text" name="codigoSeguranca" id="codigoSeguranca" required>
+                <input type="text" name="codigoSeguranca" id="codigoSeguranca" maxlength="3" minlength="3">
             </div>
         </div>
 
         <button type="submit">Enviar</button>
-        <button>Apagar</button>
-        <button>Mostrar Resultados</button>
+        <button type="reset">Apagar</button>
+        <button type="button" id="mostrarCadastro">Mostrar Resultados</button>
     </form>
+
+
+    <div id="campo-cadastros-salvos" style="display: none;">
+        <h2>Cadastros:</h2>
+        <ul id="cadastros">
+
+        </ul>
+    </div>
 
 </body>
 </html>
